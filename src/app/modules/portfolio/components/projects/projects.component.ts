@@ -18,60 +18,60 @@ export class ProjectsComponent {
   public arrayProjects = signal<IProjects[]>([
     {
       src: 'assets/img/projects/vfull.png',
-      alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
+      alt: 'Projeto Jogo da Memória',
+      title: 'Jogo da Memória',
       with: '100px',
       height: '51px',
-      description: '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular.</p>',
+      description: '<p>Explore o fascinante mundo do jogo da memória desenvolvido em ReactJs.</p>',
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br'
+          name: 'Conheça o Projeto',
+          href: 'https://github.com/braiansilva7/react-jogo-memoria'
         }
       ]
     },
 
     {
       src: 'assets/img/projects/vfull.png',
-      alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
+      alt: 'Projeto Calculadora IMC',
+      title: 'Calculadora IMC',
       with: '100px',
       height: '51px',
-      description: '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular.</p>',
+      description: '<p>Explore o seu cálculo IMC, projeto desenvolvido em ReactJs.</p>',
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br'
+          name: 'Conheça o Projeto',
+          href: 'https://github.com/braiansilva7/react-calc-imc'
         }
       ]
     },
 
     {
       src: 'assets/img/projects/vfull.png',
-      alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
+      alt: 'Projeto Calculadora',
+      title: 'Calculadora',
       with: '100px',
       height: '51px',
-      description: '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular.</p>',
+      description: '<p>Explore a calculadora, com opções de salvar os cálculos em banco de dados, projeto desenvolvido em HTML5 | CSS3 | JavaScript.</p>',
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br'
+          name: 'Conheça o Projeto',
+          href: 'https://github.com/braiansilva7/calculator'
         }
       ]
     },
 
     {
       src: 'assets/img/projects/vfull.png',
-      alt: 'Projeto Vida FullStack',
-      title: 'Vida FullStack',
+      alt: 'Projeto Loteria',
+      title: 'Sorteio Aleatório de Jogos da Loteria',
       with: '100px',
       height: '51px',
-      description: '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular.</p>',
+      description: '<p>Explore o sorteio aleatório de jogos da Loteria Federal, projeto desenvolvido em HTML5 | CSS3 | PHP.</p>',
       links: [
         {
-          name: 'Conheça o Blog',
-          href: 'https://vidafullstack.com.br'
+          name: 'Conheça o Projeto',
+          href: 'https://github.com/braiansilva7/loteria'
         }
       ]
     }
