@@ -12,5 +12,37 @@
 </style><link rel="stylesheet" href="styles-NLEABUFF.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-NLEABUFF.css"></noscript><link rel="modulepreload" href="chunk-V2BE74FS.js"></head>
 <body class="mat-typography">
   <app-root></app-root>
-<script src="polyfills-RT5I6R6G.js" type="module"></script><script src="main-CFJK5KLC.js" type="module"></script></body>
+  <div id="projects-carousel">
+    <img src="assets/img/projects/lista-de-tarefas.png" alt="Lista de Tarefas">
+    <img src="assets/img/projects/vfull.png" alt="VFull">
+  </div>
+  <div id="carousel-buttons">
+    <button id="prev-btn">Anterior</button>
+    <button id="next-btn">Próximo</button>
+  </div>
+  <style>
+    #projects-carousel { position: relative; max-width: 600px; margin: 20px auto; }
+    #projects-carousel img { display: none; width: 100%; }
+    #projects-carousel img.active { display: block; }
+    #carousel-buttons { text-align: center; margin-top: 10px; }
+    #carousel-buttons button { margin: 0 5px; }
+  </style>
+<script src="polyfills-RT5I6R6G.js" type="module"></script><script src="main-CFJK5KLC.js" type="module"></script>
+  <script>
+    (function(){
+      const imgs = document.querySelectorAll('#projects-carousel img');
+      let idx = 0;
+      if(imgs.length){
+        imgs[0].classList.add('active');
+        document.getElementById('prev-btn').addEventListener('click',()=>show(idx-1));
+        document.getElementById('next-btn').addEventListener('click',()=>show(idx+1));
+      }
+      function show(i){
+        imgs[idx].classList.remove('active');
+        idx=(i+imgs.length)%imgs.length;
+        imgs[idx].classList.add('active');
+      }
+    })();
+  </script>
+</body>
 </html>
