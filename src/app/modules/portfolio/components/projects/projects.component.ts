@@ -17,7 +17,7 @@ export class ProjectsComponent {
 
   public arrayProjects = signal<IProjects[]>([
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/memory-game.svg',
       alt: 'Projeto Jogo da Memória',
       title: 'Jogo da Memória',
       with: '100px',
@@ -32,7 +32,7 @@ export class ProjectsComponent {
     },
 
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/imc-calculator.svg',
       alt: 'Projeto Calculadora IMC',
       title: 'Calculadora IMC',
       with: '100px',
@@ -47,7 +47,7 @@ export class ProjectsComponent {
     },
 
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/calculator.svg',
       alt: 'Projeto Calculadora',
       title: 'Calculadora',
       with: '100px',
@@ -62,7 +62,7 @@ export class ProjectsComponent {
     },
 
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/lottery.svg',
       alt: 'Projeto Loteria',
       title: 'Sorteio Aleatório de Jogos da Loteria',
       with: '100px',
