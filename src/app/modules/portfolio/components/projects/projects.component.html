@@ -1,18 +1,22 @@
 <div class="container">
   <h2>Projetos Desenvolvidos</h2>
-  <ul>
-    @for (item of arrayProjects(); track item) {
-      <li>
-        <button (click)="openDialog(item)">
-          <img
-            [src]="item.src"
-            [alt]="item.alt"
-            [attr.width]="item.with"
-            [attr.height]="item.height"
-            loading="lazy"
-          >
-        </button>
-      </li>
-    }
-  </ul>
+  <div class="carousel">
+    <button class="nav prev" type="button" (click)="prev()">
+      <img src="assets/icons/chevron-up.svg" alt="Anterior">
+    </button>
+
+    <button class="image" type="button" (click)="openDialog(currentProject())">
+      <img
+        [src]="currentProject().src"
+        [alt]="currentProject().alt"
+        [attr.width]="currentProject().with"
+        [attr.height]="currentProject().height"
+        loading="lazy"
+      >
+    </button>
+
+    <button class="nav next" type="button" (click)="next()">
+      <img src="assets/icons/chevron-down.svg" alt="Próximo">
+    </button>
+  </div>
 </div>

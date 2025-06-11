@@ -1,4 +1,4 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { IProjects } from '../../interface/IProjects.interface';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
@@ -77,10 +77,24 @@ export class ProjectsComponent {
     }
   ])
 
+  public currentIndex = signal(0);
+
+  public currentProject = computed(() => this.arrayProjects()[this.currentIndex()]);
+
   public openDialog(data: IProjects){
     this.#dialog.open(DialogProjectsComponent, {
       data,
       panelClass: EDialogPanelClass.PROJECTS
     });
+  }
+
+  public prev(){
+    const index = this.currentIndex();
+    this.currentIndex.set(index === 0 ? this.arrayProjects().length - 1 : index - 1);
+  }
+
+  public next(){
+    const index = this.currentIndex();
+    this.currentIndex.set((index + 1) % this.arrayProjects().length);
   }
 }
